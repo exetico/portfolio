@@ -26,5 +26,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://interaminense.github.io/react-portfolio-behance"
+  "homepage": "https://nordahl.io"
 }

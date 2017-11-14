@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 class App extends Component {
   render() {
 
-    const URL_DEFAULT = '/react-portfolio-behance';
+    const URL_DEFAULT = '/'; // Originally `/react-portfolio-behance/`
 
     const Param = ({ match }) => <Portfolio user={match.params.username} showFeatured />;
     const ParamDefault = ({ match }) => {
