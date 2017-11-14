@@ -10,7 +10,7 @@ class App extends Component {
 
     const Param = ({ match }) => <Portfolio user={match.params.username} showFeatured />;
     const ParamDefault = ({ match }) => {
-      let listUsers = ['AitorPrieto', 'atipo', 'Ramotion', 'akirax', 'dennisschafer', 'superfiction'];
+      let listUsers = ['NORDAHLio'];
       let username = listUsers[Math.floor(Math.random() * listUsers.length)];
 
       return <Portfolio user={username} showFeatured />;

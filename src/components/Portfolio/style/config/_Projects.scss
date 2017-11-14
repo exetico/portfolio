@@ -1,5 +1,5 @@
 .Projects {
-  background-color: $color-special;
+  background-color: darken($color-primary, 10%);
 
   &:hover {
     .Card:not(:hover) {

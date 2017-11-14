@@ -110,11 +110,10 @@ class User extends Component {
         <Header showHeader={this.state.showHeader} userImage={this.state.user.image} userName={this.state.user.username} socialLinks={socialLink} />
  
         <div className="User__mask">
-          <div className="User__bg" style={{ backgroundImage: `url(${this.state.user.image})` }}></div>
+          <div className="User__bg"></div>
         </div>
         <div className="User__content">
           <div>
-            <img src={this.state.user.image} alt="user" />
             <h1>{this.state.user.username}</h1>
             <h5>{this.state.user.display_name}</h5>
             <div>
@@ -131,9 +130,9 @@ class User extends Component {
             <a className="btn btn--default">
               <i className="material-icons md-12">place</i> {this.state.user.location}
             </a>
-            <a href={`http://${this.state.user.website}`} target="_blank" className={`btn btn--default ${this.state.user.website === '' ? 'hide' : ''}`}>
+            {/* <a href={`http://${this.state.user.website}`} target="_blank" className={`btn btn--default ${this.state.user.website === '' ? 'hide' : ''}`}>
               <i className="material-icons md-12">home</i> my website
-            </a>
+            </a> */}
           </div> 
           <ul className="User__links">
             {socialLink}

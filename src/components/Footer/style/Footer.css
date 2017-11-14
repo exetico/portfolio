@@ -1,14 +1,16 @@
 .Footer {
   width: 100%;
   margin: 0 auto;
-  padding: 80px 5%;
+  padding: 40px 5%;
+  max-height: 150px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
-  color: rgba(255, 255, 255, 0.2);
-  background-color: #1d1e28; }
+  color: #f2f2f2;
+  background-color: #d71a20; }
   @media (max-width: 1200px) {
     .Footer {
       justify-content: center; } }
@@ -27,3 +29,14 @@
     .Footer ul li {
       display: inline-block;
       margin-left: 10px; }
+      .Footer ul li a.btn.btn--default {
+        color: #f2f2f2; }
+  .Footer text_right, .Footer .copyright, .Footer .credits {
+    text-align: right; }
+  .Footer .copyright {
+    margin: 0; }
+  .Footer .credits {
+    font-size: 0.7em;
+    margin: 5px auto; }
+    .Footer .credits a {
+      text-decoration: none; }

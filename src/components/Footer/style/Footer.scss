@@ -3,14 +3,16 @@
 .Footer {
   width: 100%;
   margin: 0 auto;
-  padding: 80px 5%;
+  padding: 40px 5%;
+  max-height:$card-footer-height;
+  height:$card-footer-height;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   font-family: $family-type-b;
-  color: rgba(#fff, .2);
-  background-color: darken($color-special, 7%);
+  color: $color-primary;
+  background-color: $color-special;
 
   @media(max-width: 1200px) {
     justify-content: center;
@@ -44,6 +46,26 @@
     li {
       display: inline-block;
       margin-left: 10px;
+
+      a.btn.btn--default {
+        color:$color-primary;
+      }
+    }
+  }
+
+  text_right{
+    text-align:right;
+  }
+  .copyright{
+    @extend text_right;
+    margin:0;
+  }
+
+  .credits{font-size:0.7em;
+    @extend text_right;
+    margin:5px auto;
+    a{
+      text-decoration:none;
     }
   }
 }

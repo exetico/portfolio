@@ -1,44 +1,35 @@
 import React, { Component } from 'react';
-import LogoFooter from './img/footer-react-portfolio-behance.png';
 import './style/Footer.css';
+var Copyright = require('react-copyright');
 
 class Footer extends Component {
   render() {
     return (
       <footer className="Footer">
-          <img src={LogoFooter} alt="footer portfolio + react + behance" />
           <ul>
-            <li>
-              <a href="https://github.com/interaminense/react-portfolio-behance"
+          <li>
+              <a href="http://tobiasnordahl.dk/"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="btn btn--default">React Portfolio Behance</a>
+                className="btn btn--default">About me</a>
             </li>
             <li>
-              <a href="https://github.com/interaminense"
+              <a href="https://github.com/exetico"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="btn btn--default">my github</a>
             </li>
             <li>
-              <a href="https://twitter.com/adinteraminense"
+              <a href="https://www.linkedin.com/in/tobias-nordahl-43b295103/"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="btn btn--default">my twitter</a>
-            </li>
-            <li>
-              <a href="https://codepen.io/interaminense"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="btn btn--default">my codepen</a>
+                className="btn btn--default">my linkedin</a>
             </li>
           </ul>
-
-        <p>
-          Copyright © 2017.
-          Made by <a href="https://github.com/interaminense" rel="noopener noreferrer" target="_blank">Adriano Interaminense</a>, 
-          with contribution of <a href="https://github.com/jessuircleydson" rel="noopener noreferrer" target="_blank">Jessuir Cleydson</a>
-        </p>
+        <div>
+          <p className="copyright"><Copyright></Copyright></p>
+          <p className="credits">Source code by <a href="https://github.com/interaminense" rel="noopener noreferrer" target="_blank">Adriano</a> and <a href="https://github.com/jessuircleydson" rel="noopener noreferrer" target="_blank">Jessuir</a> | Simplified by Nordahl.io</p>
+        </div>
       </footer>
     );
   }
